@@ -1,9 +1,16 @@
 import React from 'react'
+import {UsersList} from "../components/UsersList";
 
 export const Users = () => {
+  const USERS = [{
+    id: 'u1', name: 'FRAN', image: 'https://i.ytimg.com/vi/avFkyPLBiZA/maxresdefault.jpg', places: 3
+  }];
+
   return (
-    <h1>
-        Fran rapa tu madre
-    </h1>
+    
+    <UsersList items = {USERS} />
+     
+    
+    
   )
 }
